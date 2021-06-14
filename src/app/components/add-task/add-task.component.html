@@ -1,0 +1,6 @@
+<form (ngSubmit)="onSubmit()" class="add-form">
+  <div class="form-control">
+    <input [(ngModel)]="task.toDo" id="text" name="text" placeholder="Add Task" type="text">
+  </div>
+  <input class="btn btn-block" type="submit" value="Save Task">
+</form>

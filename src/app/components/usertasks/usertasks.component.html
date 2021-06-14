@@ -1,0 +1,16 @@
+<header>
+  <div class="container">
+    <app-add-task></app-add-task>
+    <div *ngFor="let task of tasks" class="task">
+      <div>
+        <h3>{{task.toDo}}
+          <fa-icon (click)="deleteTask(task)" [icon]="faTimes"></fa-icon>
+        </h3>
+        <h3>{{task.time}}</h3>
+      </div>
+    </div>
+    <button (click)="logout()" class="btn">Выход</button>
+  </div>
+
+  <router-outlet></router-outlet>
+</header>
